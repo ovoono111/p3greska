@@ -1,0 +1,133 @@
+/* Desktop View */
+
+body {
+  font-family: "Asap", sans-serif;
+  color: white;
+  background-color: #ebebeb;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container_header {
+  background-color: #484848;
+  min-height: 100px;
+  width: 100%;
+  position: fixed;
+}
+
+header {
+  max-width: 1024px;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.my_button {
+  border: 1px solid white;
+  padding: 10px 25px;
+  margin-left: 15px;
+}
+
+.container_main {
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 140px;
+}
+
+.card {
+  width: 30%;
+  background-color: #00f490;
+  margin-bottom: 40px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 20px 25px;
+}
+
+.card p::first-line {
+  font-weight: 700;
+}
+
+.desktop_card_hide {
+  display: none;
+}
+
+.icon_nav {
+  display: none;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+
+  .desktop_card_hide {
+    display: block;
+  }
+  .container_header {
+    position: relative;
+  }
+
+  .container_main {
+    padding-top: 40px;
+  }
+
+  nav {
+    display: none;
+  }
+  nav a {
+    display: block;
+  }
+
+  .logo {
+    padding: 40px 0;
+  }
+
+  .icon_nav {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .dropdown_menu {
+    display: none;
+    position: absolute;
+
+    padding-top: 10px;
+  }
+
+  .dropdown_button {
+    display: block;
+    background-color: coral;
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}
